@@ -94,7 +94,6 @@ function AddTodo({ onAddTodo }) {
             setTitle('');
         }
     };
-
     return (
         <>
             <input placeholder="Saissisez une tâche" value={title} onChange={e => setTitle(e.target.value)}/>
