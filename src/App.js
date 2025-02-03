@@ -26,11 +26,13 @@ import {useState} from "react";
                 <label htmlFor="tache">Ajouter une tâche</label>
                 <input onChange={e => setNewNotes(e.target.value)}/>
                 <button onClick={handleClick}>Ajouter</button>
+
                 <ul id={"listeTache"}>
-                {notes.map(newNotes => (
-                <li key={newNotes.id}>
-                    <Task newNotes={newNotes} onDelete={onDeletenewNotes}/>
-                </li>))}}
+                    {notes.map(newNotes => (
+                        <li key={newNotes.id}>
+                            {newNotes}
+                            <button onClick={handleClick}>Supprimer</button>
+                        </li>)}
                 </ul>
 
             </header>
