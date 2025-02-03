@@ -70,7 +70,7 @@ function TaskApp() {
         setTodos(todos.filter(t => t.id !== todoId));
     }
 
-    // Génère le visuel (HTML)
+    // Génère le visuel (HTML) permet grâce classe d'ajouter du CSS
     return (
         < div className={"App-header"}>
             <h1>Liste des tâches</h1>
